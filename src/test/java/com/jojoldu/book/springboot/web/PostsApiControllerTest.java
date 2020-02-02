@@ -40,8 +40,11 @@ public class PostsApiControllerTest {
     public void Posts_등록된다() throws Exception {
         String title = "title";
         String content = "content";
-
-        PostsSaveRequestDto requestDto = PostsSaveRequestDto.builder().title(title).content(content).author("author").build();
+        PostsSaveRequestDto requestDto = PostsSaveRequestDto.builder()
+                                .title(title)
+                                .content(content)
+                                .author("author")
+                                .build();
 
         String url = "http://localhost:" + port + "/api/v1/posts";
 
